@@ -1,0 +1,20 @@
+---
+const { title } = Astro.props;
+---
+
+<style is:global>
+  body {
+    /* background-color: pink; */
+  }
+</style>
+
+<html>
+  <head>
+    <title>{title}</title>
+  </head>
+  <body>
+    <div>Layout - title is: {title}</div>
+
+    <slot />
+  </body>
+</html>
